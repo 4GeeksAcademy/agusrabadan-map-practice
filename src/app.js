@@ -1,4 +1,4 @@
-
+/* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
@@ -211,10 +211,10 @@ const people = [
 
 let textHTML= '<ul class="list-group">'
 
- people.map((item,id)=> 
+ people.map((item)=> 
 
  textHTML += `
- <li key=${id} class="list-group-item d-flex justify-content-between">
+ <li  class="list-group-item d-flex justify-content-between">
    <div>${item.name}</div>
    <div>
      <span class="mx-1"><i class="far fa-eye"></i></span>
@@ -253,10 +253,12 @@ people.map((element)=>{
   ` 
 })
 
+//Mapeo hacia HTML
+
 const listPeople= document.querySelector("#list");
-listPeople.innerHTML=textHTML;
+listPeople.innerHTML=textHTML; //Lista
 
 const cardPeople = document.querySelector('#card')
-  cardPeople.innerHTML = cardHTML
-
+  cardPeople.innerHTML = cardHTML //Card
+ 
 };

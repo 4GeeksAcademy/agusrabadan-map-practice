@@ -3,5 +3,26 @@
 
 body{
     background-color: green;
-    font-size: 400px;
+    
 }
+
+
+#footer{
+    transform: rotate(180deg);
+    font-size: 80px;
+    text-align: end;
+    display: flex;
+}
+
+#header{
+    font-size: 80px;
+    text-align: start;
+    display: flex;
+}
+
+#number{
+    font-size: 80px;
+    
+}
+
+

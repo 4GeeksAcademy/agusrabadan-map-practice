@@ -25,7 +25,11 @@ window.onload = function () {
   </div>
     
     <button type="button" onclick="location.reload();" class="btn btn-warning btn-lg">Generate Random Card</button>
-   
-  `
-          
+    <button type="button" onclick="${temporizador}" class="btn btn-danger btn-lg">Autogenerate</button>
+    `
+     function autoReload(){
+    return location.reload()
+  }
+    let temporizador = setTimeout(autoReload,4000);      
+ 
 };   
